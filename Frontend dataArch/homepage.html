@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataArch</title>
+    <link href='https://fonts.googleapis.com/css?family=Hepta Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            DataArch
+        </div>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">BLOG</a>
+            <a href="#">CAREERS</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>
+            Helping <strong>Data</strong>-Driven<br>
+            Businesses Unlock<br>
+            <strong>Greater Value</strong>
+        </h1>
+        <button>GET STARTED</button>
+    </section>
+
+    <!-- Info Section (Appears After Scrolling) -->
+    <section class="info-section">
+        <div class="glass-container">
+            <h2>Harness the power of data with <b>DataArch</b></h2><br>
+            <p>— where innovation meets intelligence.</p><br>
+            <p class="features">
+                Simplify Data Management | Optimize the Cloud | Modernize Your Data Platforms
+            </p>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div id="flex-col"class="glass-container">
+            <!-- Left Section -->
+            <div class="text-box">
+                <h2>Why choose <br> DataArch?</h2>
+            </div>
+    
+            <!-- Right Section (Staggered Cards) -->
+            <div class="cards">
+                <div class="column">
+                    <div class="card blue">  
+                        <span>☁️</span>
+                        <h3>Cloud Transformation</h3>
+                        <p>Seamless strategy, migration & management.</p>
+                    </div>
+                    <div class="card purple lower">
+                        <span>🔗</span>
+                        <h3>Smart Data Pipelines</h3>
+                        <p>Scalable solutions for real-time & big data.</p>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="card purple higher">
+                        <span>🗄️</span>
+                        <h3>AI-Ready Data Lakes</h3>
+                        <p>Secure storage for structured & unstructured data.</p>
+                    </div>
+                    <div class="card blue">
+                        <span>⚙️</span>
+                        <h3>Future-Ready Tech</h3>
+                        <p>Automate, optimize & accelerate growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+
+        // Scroll Animation for Info Section
+        document.addEventListener("scroll", function () {
+            const section = document.querySelector(".info-section");
+            const position = section.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+
+            if (position < screenHeight * 0.75) {
+                section.classList.add("visible");
+            }
+        });
+
+       
+
+        document.addEventListener("scroll", function () {
+            const section = document.querySelector(".why-choose");
+            const position = section.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+
+            if (position < screenHeight * 0.75) {
+                section.classList.add("visible");
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>

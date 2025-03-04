@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Openings</h1>
+        <input type="text" placeholder="Search jobs..." />
+        <select>
+            <option>Workplace type</option>
+            <option>Hybrid</option>
+            <option>Remote</option>
+            <option>On-site</option>
+        </select>
+        <select>
+            <option>Location</option>
+            <option>London</option>
+            <option>Lisbon</option>
+        </select>
+        <select>
+            <option>Department</option>
+            <option>Operations</option>
+            <option>Engineering</option>
+            <option>Risk</option>
+        </select>
+        <select>
+            <option>Work type</option>
+            <option>Full time</option>
+            <option>Part time</option>
+        </select>
+
+        <ul id="job-list">
+            <li onclick="openJobDetails('Operations Specialist')">
+                <strong>Operations Specialist</strong>
+                <p>Posted 7 days ago</p>
+                <p>London, England, United Kingdom</p>
+                <p>Department: Operations</p>
+            </li>
+            <li onclick="openJobDetails('Senior Credit Underwriter')">
+                <strong>Senior Credit Underwriter</strong>
+                <p>Posted about 1 month ago</p>
+                <p>London, England, United Kingdom</p>
+                <p>Department: Risk</p>
+            </li>
+            <li onclick="openJobDetails('Senior Software Engineer (full-stack)')">
+                <strong>Senior Software Engineer (full-stack)</strong>
+                <p>Posted about 1 month ago</p>
+                <p>Multiple locations: Warsaw, Lisbon, Barcelona</p>
+                <p>Department: Engineering</p>
+            </li>
+            <li onclick="openJobDetails('Operating Principal')">
+                <strong>Operating Principal</strong>
+                <p>Posted about 2 months ago</p>
+                <p>London, England, United Kingdom</p>
+                <p>Department: Operations</p>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
