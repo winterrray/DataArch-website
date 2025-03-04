@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings</title>
+    <link rel="stylesheet" href="style/career-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Job Openings</h1>
+            <p class="subtitle">Find your next career opportunity</p>
+        </header>
+
+        <div class="filter-section">
+            <div class="search-container">
+                <input type="text" id="job-search" placeholder="Search jobs..." aria-label="Search jobs">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <div class="filters">
+                <select aria-label="Workplace type">
+                    <option value="">Workplace type</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="remote">Remote</option>
+                    <option value="onsite">On-site</option>
+                </select>
+
+                <select aria-label="Location">
+                    <option value="">Location</option>
+                    <option value="london">London</option>
+                    <option value="lisbon">Lisbon</option>
+                </select>
+
+                <select aria-label="Department">
+                    <option value="">Department</option>
+                    <option value="operations">Operations</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="risk">Risk</option>
+                </select>
+
+                <select aria-label="Work type">
+                    <option value="">Work type</option>
+                    <option value="full-time">Full time</option>
+                    <option value="part-time">Part time</option>
+                </select>
+            </div>
+        </div>
+
+        <ul id="job-list" class="job-listings">
+            <li tabindex="0" onclick="openJobDetails('Operations Specialist')">
+                <div class="job-info">
+                    <h2>Operations Specialist</h2>
+                    <div class="job-details">
+                        <span class="posted-date">Posted 7 days ago</span>
+                        <span class="location">London, England, United Kingdom</span>
+                        <span class="department">Department: Operations</span>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button>View Details</button>
+                </div>
+            </li>
+            <li tabindex="0" onclick="openJobDetails('Senior Credit Underwriter')">
+                <div class="job-info">
+                    <h2>Senior Credit Underwriter</h2>
+                    <div class="job-details">
+                        <span class="posted-date">Posted about 1 month ago</span>
+                        <span class="location">London, England, United Kingdom</span>
+                        <span class="department">Department: Risk</span>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button>View Details</button>
+                </div>
+            </li>
+            <li tabindex="0" onclick="openJobDetails('Senior Software Engineer (full-stack)')">
+                <div class="job-info">
+                    <h2>Senior Software Engineer (full-stack)</h2>
+                    <div class="job-details">
+                        <span class="posted-date">Posted about 1 month ago</span>
+                        <span class="location">Multiple locations: Warsaw, Lisbon, Barcelona</span>
+                        <span class="department">Department: Engineering</span>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button>View Details</button>
+                </div>
+            </li>
+            <li tabindex="0" onclick="openJobDetails('Operating Principal')">
+                <div class="job-info">
+                    <h2>Operating Principal</h2>
+                    <div class="job-details">
+                        <span class="posted-date">Posted about 2 months ago</span>
+                        <span class="location">London, England, United Kingdom</span>
+                        <span class="department">Department: Operations</span>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button>View Details</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

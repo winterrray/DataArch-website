@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Operations Specialist</title>
+    <link rel="stylesheet" href="jd-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header">Operations Specialist</h1>
+            <p class="job-location">Pune, India</p>
+        </header>
+
+        <div class="application-section">
+            <h2>Application Form</h2>
+            <form id="applicationForm" novalidate>
+                <div class="form-group">
+                    <label for="resume">Resume <span class="required">*</span></label>
+                    <div class="file-upload">
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                        <span class="file-upload-text">Choose file</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter (Optional)</label>
+                    <textarea id="coverLetter" name="coverLetter" placeholder="Add any additional context about your application"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Work Authorization <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="workRights" value="yes" required>
+                            <span>Yes, I have unlimited work rights in this location</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="workRights" value="no" required>
+                            <span>No, I would require sponsorship</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="salary">Salary Expectations <span class="required">*</span></label>
+                    <input type="number" id="salary" name="salary" min="0" step="1000" required placeholder="Enter expected annual salary">
+                </div>
+
+                <div class="form-group">
+                    <label for="noticePeriod">Notice Period (Weeks) <span class="required">*</span></label>
+                    <input type="number" id="noticePeriod" name="noticePeriod" min="0" max="12" required placeholder="Enter notice period in weeks">
+                </div>
+
+                <div class="form-group consent-group">
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                    <label for="privacyConsent">
+                        I have read and accept the <a href="#" target="_blank">Privacy Notice</a>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="jobscript.js"></script>
+</body>
+</html>
