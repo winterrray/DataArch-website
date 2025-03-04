@@ -164,12 +164,12 @@ body {
     font-weight: bold;
 }
 
-/* Hover effect */
+/* Hover effect
 .glass-container:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+} */
 
 /* .info-section h2 {
     font-size: 26px;
@@ -311,7 +311,8 @@ body {
 
 /* Card Hover Effect */
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Colors */
@@ -321,6 +322,8 @@ body {
 
 .purple {
     background: #b8a3e4;
+    position: relative;
+    top: -7px;
 }
 
 /* Staggered Positioning */
