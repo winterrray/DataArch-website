@@ -9,7 +9,7 @@
 body {
     /* background: white; */
     scroll-behavior: smooth;
-    background: url('background.svg') no-repeat center center fixed;
+    background: url('resources/background.svg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -100,7 +100,6 @@ body {
 
 /* New Section (Hidden Initially) */
 .info-section {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +121,7 @@ body {
 /* Text Styling */
 .glass-container {
     width: 90%; /* Large rectangle */
-    height: 80vh; /* Almost full height */
+    height: 50vh; /* Almost full height */
     background: rgba(255, 255, 255, 0.2); /* Translucent white */
     backdrop-filter: blur(10px); /* Blurred background inside */
     border-radius: 20px;
