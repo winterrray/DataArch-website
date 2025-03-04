@@ -3,122 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataArch</title>
-    <link href='https://fonts.googleapis.com/css?family=Hepta Slab' rel='stylesheet'>
+    <title>DataArch | Data Architecture Solutions</title>
+    <meta name="description" content="DataArch helps data-driven businesses unlock greater value through cloud transformation, smart data pipelines, and AI-ready solutions.">
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="resources/favicon.png">
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">
-            DataArch
+            <span class="logo-text">DataArch</span>
         </div>
         <div class="nav-links">
-            <a href="#">HOME</a>
+            <a href="#" class="active">HOME</a>
             <a href="#">ABOUT</a>
             <a href="#">SERVICES</a>
             <a href="#">BLOG</a>
             <a href="#">CAREERS</a>
-            <a href="#">CONTACT US</a>
+            <a href="#contact">CONTACT US</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>
-            Helping <strong>Data</strong>-Driven<br>
-            Businesses Unlock<br>
-            <strong>Greater Value</strong>
-        </h1>
-        <button>GET STARTED</button>
-    </section>
-
-    <!-- Info Section (Appears After Scrolling) -->
-    <section class="info-section">
-        <div class="glass-container">
-            <h2>Harness the power of data with <b>DataArch</b></h2><br>
-            <p>— where innovation meets intelligence.</p><br>
-            <p class="features">
-                Simplify Data Management | Optimize the Cloud | Modernize Your Data Platforms
-            </p>
+        <div class="hero-content">
+            <h1>
+                Helping <strong>Data</strong>-Driven<br>
+                Businesses Unlock<br>
+                <strong>Greater Value</strong>
+            </h1>
+            <p class="hero-subtitle">Transform your data strategy with our expert solutions</p>
+            <div class="cta-buttons">
+                <button class="primary-btn">GET STARTED</button>
+                <button class="secondary-btn">LEARN MORE</button>
+            </div>
         </div>
     </section>
 
+    <!-- Info Section (Appears After Scrolling) -->
+    <section class="info-section" id="about">
+        <div class="glass-container">
+            <h2>Harness the power of data with <b>DataArch</b></h2>
+            <p class="tagline">— where innovation meets intelligence.</p>
+            <p class="features">
+                Simplify Data Management | Optimize the Cloud | Modernize Your Data Platforms
+            </p>
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Industries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
     <section class="why-choose">
-        <div id="flex-col"class="glass-container">
+        <div class="glass-container flex-row">
             <!-- Left Section -->
             <div class="text-box">
-                <h2>Why choose <br> DataArch?</h2>
+                <h3>Why choose <br> DataArch?</h3>
             </div>
     
             <!-- Right Section (Staggered Cards) -->
             <div class="cards">
                 <div class="column">
                     <div class="card blue">  
-                        <span>☁️</span>
+                        <span class="card-icon">☁️</span>
                         <h3>Cloud Transformation</h3>
                         <p>Seamless strategy, migration & management.</p>
+                        
                     </div>
                     <div class="card purple lower">
-                        <span>🔗</span>
+                        <span class="card-icon">🔗</span>
                         <h3>Smart Data Pipelines</h3>
                         <p>Scalable solutions for real-time & big data.</p>
+                        
                     </div>
                 </div>
     
                 <div class="column">
                     <div class="card purple higher">
-                        <span>🗄️</span>
+                        <span class="card-icon">🗄️</span>
                         <h3>AI-Ready Data Lakes</h3>
                         <p>Secure storage for structured & unstructured data.</p>
+                        
                     </div>
                     <div class="card blue">
-                        <span>⚙️</span>
+                        <span class="card-icon">⚙️</span>
                         <h3>Future-Ready Tech</h3>
                         <p>Automate, optimize & accelerate growth.</p>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="quote">"DataArch transformed our entire data infrastructure. Our analytics team now delivers insights 10x faster than before."</div>
+                <div class="client-info">
+                    <div class="client-name">Sarah Johnson</div>
+                    <div class="client-position">CTO, TechVision Inc.</div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="quote">"The cloud migration was seamless and our operational costs decreased by 35% within the first quarter."</div>
+                <div class="client-info">
+                    <div class="client-name">Michael Chen</div>
+                    <div class="client-position">Data Director, Global Finance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="glass-container">
+            <h2>Ready to transform your data strategy?</h2>
+            <p class="contact-subtitle">Get in touch with our experts</p>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Company">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <textarea placeholder="How can we help you?" rows="4" required></textarea>
+                <button type="submit" class="primary-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-text">DataArch</div>
+                <p>Helping data-driven businesses unlock greater value</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <a href="#">Cloud Transformation</a>
+                    <a href="#">Data Pipelines</a>
+                    <a href="#">Data Lakes</a>
+                    <a href="#">Data Strategy</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Whitepapers</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DataArch. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
     <script>
+        // Mobile menu toggle
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
+            document.querySelector(".hamburger").classList.toggle("active");
         }
 
-        // Scroll Animation for Info Section
-        document.addEventListener("scroll", function () {
-            const section = document.querySelector(".info-section");
-            const position = section.getBoundingClientRect().top;
-            const screenHeight = window.innerHeight;
+        // Scroll Animation for sections
+        const sections = [".info-section", ".why-choose", ".testimonials", ".contact"];
+        
+        function checkVisibility() {
+            sections.forEach(sectionClass => {
+                const section = document.querySelector(sectionClass);
+                const position = section.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
 
-            if (position < screenHeight * 0.75) {
-                section.classList.add("visible");
-            }
-        });
+                if (position < screenHeight * 0.75) {
+                    section.classList.add("visible");
+                }
+            });
+        }
 
-       
-
-        document.addEventListener("scroll", function () {
-            const section = document.querySelector(".why-choose");
-            const position = section.getBoundingClientRect().top;
-            const screenHeight = window.innerHeight;
-
-            if (position < screenHeight * 0.75) {
-                section.classList.add("visible");
-            }
-        });
-
-
+        // Check on scroll
+        document.addEventListener("scroll", checkVisibility);
+        
+        // Check on page load
+        window.addEventListener("load", checkVisibility);
     </script>
-
 </body>
 </html>
