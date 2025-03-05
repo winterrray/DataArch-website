@@ -7,6 +7,8 @@
     --error-color: #e74c3c;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +22,13 @@ body {
     background: url('../resources/background.svg') no-repeat center center fixed;
     background-size: cover;
     line-height: 1.6;
+}
+
+h2{
+    text-decoration-color: #3498db;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    
 }
 
 .container {
