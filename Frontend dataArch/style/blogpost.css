@@ -1,0 +1,236 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --primary-gradient: linear-gradient(to right, #d1d8fc, #e9b3ea); 
+    --primary-color: #2b3ddb; /* Primary color */
+    --secondary-color: #9c27b0; /* Secondary color */
+    --text-dark: #1a1a1a; /* Dark text color */
+    --text-light: #666666; /* Light text color */
+    --background-light: rgba(255, 255, 255, 0.1); /* Glass effect */
+    --border-radius: 12px; /* Border radius for elements */
+    --transition-speed: 0.3s; /* Transition speed for effects */
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Box shadow for elements */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    background: url('../resources/background.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-dark);
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%; /* Padding for navbar */
+    background: linear-gradient(to right, #d1d8fc, #e9b3ea); /* Navbar background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for navbar */
+}
+
+.nav-container {
+    max-width: 1200px; /* Max width for navbar content */
+    margin: 0 auto; /* Center navbar content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.logo-text {
+    font-size: 2rem; /* Adjusted logo text size to match home page */
+    font-weight: bold; /* Logo text weight */
+    background: linear-gradient(90deg, #2b3ddb, #9c27b0); /* Logo gradient */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text transparent */
+}
+
+.nav-links {
+    display: flex; /* Flexbox for nav links */
+    gap: 2rem; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-dark); /* Link color */
+    font-size: 1rem; /* Adjusted link font size to match home page */
+    font-weight: 500; /* Link font weight */
+    position: relative; /* Position for pseudo-element */
+    padding: 0.5rem 0; /* Padding for links */
+    transition: color var(--transition-speed); /* Transition for color */
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+.nav-links a.active {
+    color: var(--primary-color); /* Active link color */
+}
+
+/* Blog Post Section */
+.blog-post {
+    padding: 4rem 10%; /* Padding for the blog post section */
+    margin-top: 60px; /* Add margin to push content down below the navbar */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    border-radius: var(--border-radius); /* Rounded corners */
+    box-shadow: var(--box-shadow); /* Shadow for the section */
+}
+
+.blog-post-container {
+    max-width: 800px; /* Max width for the blog post content */
+    margin: 0 auto; /* Center the content */
+}
+
+.post-title {
+    font-size: 2.5rem; /* Title size */
+    font-weight: 700; /* Bold weight for title */
+    margin-bottom: 1rem; /* Space below title */
+    margin-top: 20px; /* Add margin to ensure it is below the navbar */
+    color: var(--text-dark); /* Dark text color */
+}
+
+.post-meta {
+    display: flex; /* Flexbox for meta information */
+    justify-content: space-between; /* Space between items */
+    color: var(--text-light); /* Light text color */
+    font-size: 0.875rem; /* Font size for meta information */
+    margin-bottom: 2rem; /* Space below meta information */
+}
+
+.post-content-wrapper {
+    overflow: hidden; /* Clear floats */
+}
+
+.post-image {
+    float: left; /* Float the image to the left */
+    width: 25%; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: var(--border-radius); /* Rounded corners for the image */
+    margin-right: 20px; /* Space between the image and text */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
+.post-content {
+    line-height: 1.6; /* Line height for readability */
+    color: var(--text-dark); /* Dark text color */
+}
+
+.post-content h2 {
+    font-size: 1.75rem; /* Subheading size */
+    margin-top: 2rem; /* Space above subheading */
+    margin-bottom: 1rem; /* Space below subheading */
+    color: var(--primary-color); /* Primary color for subheadings */
+}
+
+.post-content p {
+    margin-bottom: 1.5rem; /* Space below paragraphs */
+}
+
+/*footer*/
+footer {
+    background: var(--primary-gradient); /* Use your defined gradient */
+    padding: 4rem 10% 2rem; /* Adjust padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 250px; /* Minimum width for the logo section */
+}
+
+.footer-logo .logo-text {
+    font-size: 2rem; /* Logo text size */
+    margin-bottom: 1rem; /* Space below the logo text */
+}
+
+.footer-links {
+    flex: 2; /* Allow the links section to take more space */
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Space between columns */
+    flex-wrap: wrap; /* Allow wrapping of columns */
+}
+
+.footer-column {
+    min-width: 150px; /* Minimum width for each column */
+}
+
+.footer-column h4 {
+    font-size: 1.1rem; /* Heading size */
+    margin-bottom: 1.25rem; /* Space below heading */
+    font-weight: 700; /* Bold weight for headings */
+}
+
+.footer-column a {
+    display: block; /* Make links block elements */
+    text-decoration: none; /* Remove underline */
+    color: var(--text-dark); /* Link color */
+    margin-bottom: 0.75rem; /* Space below each link */
+    font-size: 0.9rem; /* Font size for links */
+    transition: color var(--transition-speed); /* Transition for hover effect */
+}
+
+.footer-column a:hover {
+    color: #2b3ddb; /* Change color on hover */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Space between text and legal links */
+    align-items: center; /* Center align items */
+    padding-top: 2rem; /* Space above the bottom section */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Top border */
+}
+
+.footer-bottom p {
+    font-size: 0.875rem; /* Font size for copyright text */
+    color: var(--text-light); /* Color for copyright text */
+}
+
+.legal-links {
+    display: flex; /* Flexbox for legal links */
+    gap: 1.5rem; /* Space between legal links */
+}
+
+.legal-links a {
+    font-size: 0.875rem; /* Font size for legal links */
+    color: var(--text-light); /* Color for legal links */
+    text-decoration: none; /* Remove underline */
+    transition: color var(--transition-speed); /* Transition for hover effect */
+}
+
+.legal-links a:hover {
+    color: #2b3ddb; /* Change color on hover */
+}
+

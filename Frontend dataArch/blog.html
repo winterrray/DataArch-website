@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="public/Assets/Logo.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;700&family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>DataArch Blog - Unleash Your Creativity</title>
+</head>
+
+<body>
+  
+       <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-container">
+      <div class="logo">
+          <span class="logo-text">DataArch</span>
+      </div>
+      <div class="nav-links">
+          <a href="index.html" class="">Home</a> <!-- No active class here -->
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="blog.html" class="active">Blog</a> <!-- Active class for Blog -->
+          <a href="career.html">Careers</a>
+          <a href="#contact">Contact Us</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Unleash Your Creativity, Share Your Voice</h1>
+      <p>Discover, create, and connect through powerful storytelling on Data Arch</p>
+      <div class="cta-buttons">
+        <button><a href="#featured" class="primary-btn">Explore Blogs</a></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Blogs Section -->
+  <section class="featured-blogs" id="featured">
+    <div class="featured-blogs-grid">
+      <div class="blog-card">
+        <img src="https://storage.googleapis.com/a1aa/image/zr0kIT9Snf3mUoeVrWz8ibDauc6L1gDjxjJedX_Gofc.jpg"
+          alt="Digital Storytelling Techniques" loading="lazy" />
+        <div class="blog-card-content">
+          <h3>The Art of Storytelling in the Digital Age</h3>
+          <p>Explore how digital platforms are transforming narrative techniques and content creation.</p>
+          <div class="blog-card-meta">
+            <span>John Doe</span>
+            <a class="text-blue-600 hover:underline" href="blogpost.html">5 min read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://storage.googleapis.com/a1aa/image/r-e9MddYFK28k_zq2ogSOpcNi0Nb5n1QHOeRTOzF5tA.jpg"
+          alt="AI in Everyday Life" loading="lazy" />
+        <div class="blog-card-content">
+          <h3>AI in Everyday Life: How It's Changing Our World</h3>
+          <p>Discover how artificial intelligence is seamlessly integrating into our daily activities.</p>
+          <div class="blog-card-meta">
+            <span>Emily Carter</span>
+            <a class="text-blue-600 hover:underline" href="blogpost.html">8 min read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://storage.googleapis.com/a1aa/image/-4Fwebr7w9E1BZOkul08PQr043VOquHReP3x-3TlQqc.jpg"
+          alt="The Rise of Remote Work" loading="lazy" />
+        <div class="blog-card-content">
+          <h3>The Rise of Remote Work: Future or Fad?</h3>
+          <p>Analyzing the long-term impact of remote work on businesses and employees worldwide.</p>
+          <div class="blog-card-meta">
+            <span>Michael Lee</span>
+            <a class="text-blue-600 hover:underline" href="blogpost.html">6 min read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://storage.googleapis.com/a1aa/image/zk4V1U7fL7Gf7YSaoZjg8aq8RMrw3Z8dYR4J9oCnXA4.jpg"
+          alt="Personal Finance Tips" loading="lazy" />
+        <div class="blog-card-content">
+          <h3>Personal Finance 101: Smart Money Habits</h3>
+          <p>Learn essential money management skills to build financial stability and independence.</p>
+          <div class="blog-card-meta">
+            <span>Sophia Martinez</span>
+            <a class="text-blue-600 hover:underline" href="#">7 min read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://storage.googleapis.com/a1aa/image/kHF-0urnicURYAWskMJF23IAH_sHAA3hXe8Pcdl28sY.jpg"
+          alt="Technology Trends 2024" loading="lazy" />
+        <div class="blog-card-content">
+          <h3>Technology Trends Shaping 2024</h3>
+          <p>A deep dive into the technological innovations that are set to redefine our future.</p>
+          <div class="blog-card-meta">
+            <span>Jane Smith</span>
+            <a class="text-blue-600 hover:underline" href="#">7 min read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://storage.googleapis.com/a1aa/image/zr0kIT9Snf3mUoeVrWz8ibDauc6L1gDjxjJedX_Gofc.jpg"
+          alt="Sustainable Living Guide" loading="lazy" />
+        <div class="blog-card-content">
+          <h3>Sustainable Living: Practical Tips</h3>
+          <p>Small changes that can make a big impact on your environmental footprint.</p>
+          <div class="blog-card-meta">
+            <span>Alex Johnson</span>
+            <a class="text-blue-600 hover:underline" href="#">6 min read</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+<footer>
+  <div class="footer-content">
+      <div class="footer-logo">
+          <div class="logo-text">DataArch</div>
+          <p>Helping data-driven businesses unlock greater value</p>
+      </div>
+      <div class="footer-links">
+          <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Team</a>
+              <a href="#">Careers</a>
+              <a href="#">Blog</a>
+          </div>
+          <div class="footer-column">
+              <h4>Services</h4>
+              <a href="#">Cloud Transformation</a>
+              <a href="#">Data Pipelines</a>
+              <a href="#">Data Lakes</a>
+              <a href="#">Data Strategy</a>
+          </div>
+          <div class="footer-column">
+              <h4>Resources</h4>
+              <a href="#">Case Studies</a>
+              <a href="#">Whitepapers</a>
+              <a href="#">Webinars</a>
+              <a href="#">Documentation</a>
+          </div>
+          <div class="footer-column">
+              <h4>Connect</h4>
+              <a href="#">Contact Us</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+              <a href="#">GitHub</a>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2025 DataArch. All rights reserved.</p>
+      <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+      </div>
+  </div>
+</footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollBtn" title="Go to top" aria-label="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="public/js/home.js" defer></script>
+</body>
+
+</html>
